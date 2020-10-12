@@ -4,7 +4,7 @@ This is a mobile-friendly shopping cart application buiit with React, Redux, Exp
 
 Which looks like this
 
-![](public/images/ScreenShot.png)
+![](frontend/public/images/ScreenShot.png)
 
 The app provides users with the following functionality:
 - Full featured shopping cart
@@ -13,7 +13,7 @@ The app provides users with the following functionality:
 - Admin user and product management
 - Checkout process 
 
-Deployed to Heroku: [Ready to order a delicious burger !?]()
+Deployed to Heroku: []()
 
 
 
