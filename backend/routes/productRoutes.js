@@ -1,7 +1,8 @@
-import express from 'express'
-import asyncHandler from 'express-async-handler'
-const router = express.Router()
-import Product from '../models/productModel.js'
+import express from 'express';
+import asyncHandler from 'express-async-handler';
+const router = express.Router();
+import Product from '../models/productModel.js';
+
 
 // @desc    fetch all products
 // @route   get/api/products
@@ -14,6 +15,7 @@ router.get(
         res.json(products)
     })
 )
+
 
 // @desc    fetch single product
 // @route   get/api/products/:id
@@ -32,7 +34,6 @@ router.get(
 
     })
 )
-
 
 
 export default router
