@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 import {
     PRODUCT_LIST_REQUEST,
@@ -7,7 +7,7 @@ import {
     PRODUCT_DETAILS_REQUEST,
     PRODUCT_DETAILS_SUCCESS,
     PRODUCT_DETAILS_FAIL
-} from '../constants/productConstants.js'
+} from '../constants/productConstants.js';
 
 
 export const listProducts = () => async (dispatch) => {
