@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { Row, Col, Image, ListGroup, Form, Card, Button } from 'react-bootstrap'
-import Rating from '../components/Rating'
-import Loader from '../components/Loader'
+import { Row, Col, Image, ListGroup, Form, Card, Button } from 'react-bootstrap';
+import Rating from '../components/Rating';
+import Loader from '../components/Loader';
 import Message from "../components/Message";
 import { listProductDetails } from "../actions/productActions";
 
@@ -25,16 +25,16 @@ const ProductScreen = ({ history, match }) => {
 
     useEffect(() => {
         dispatch(listProductDetails(match.params.id))
-    },[dispatch, match])
+    },[dispatch, match]);
 
     const addToCartHandler = () => {
         history.push(`/cart/${match.params.id}?qty=${qty}`)
-    }
+    };
 
     const updateQuantity = (e) => {
         console.log(e.target.value);
         setQty(e.target.value);
-    }
+    };
 
     return (
         <>
@@ -147,7 +147,7 @@ const ProductScreen = ({ history, match }) => {
     );
 };
 
-export default ProductScreen
+export default ProductScreen;
 
 
 /*{ product.countInStock > 0 && () Inline If with Logical && Operator */
