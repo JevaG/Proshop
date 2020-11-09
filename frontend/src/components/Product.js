@@ -1,7 +1,7 @@
-import React from 'react'
-import { Card } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import Rating from './Rating'
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Rating from './Rating';
 
 /*
     It might look like this const Product = (props) => { ...  <a href={`/product/${props.product._id}`}>
