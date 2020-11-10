@@ -37,6 +37,6 @@ const Product = ({ product }) => {
                </Card.Body>
            </Card>
     )
-}
+};
 
-export default Product
+export default Product;
