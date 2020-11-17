@@ -117,8 +117,6 @@ const CartScreen = ({ match, location, history }) => {
             </Col>
         </Row>
     )
-}
-
-
+};
 
 export default CartScreen;
