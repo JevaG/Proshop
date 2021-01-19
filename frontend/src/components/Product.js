@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Rating from './Rating';
 
 /*
-    It might look like this const Product = (props) => { ...  <a href={`/product/${props.product._id}`}>
+    It might have looked like this const Product = (props) => { ...  <a href={`/product/${props.product._id}`}>
     instead I used the structuring by passing in curly braces and take the product directly.
+    
 */
 const Product = ({ product }) => {
 
