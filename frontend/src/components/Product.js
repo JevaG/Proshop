@@ -6,7 +6,7 @@ import Rating from './Rating';
 /*
     It might have looked like this const Product = (props) => { ...  <a href={`/product/${props.product._id}`}>
     instead I used the structuring by passing in curly braces and take the product directly.
-    
+    destructuring expression' is available in ES6
 */
 const Product = ({ product }) => {
 

@@ -52,7 +52,6 @@ const ProductScreen = ({ history, match }) => {
     };
 
     const updateQuantity = (e) => {
-        console.log(e.target.value);
         setQty(e.target.value);
     };
 
