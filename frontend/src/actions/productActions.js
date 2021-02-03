@@ -118,14 +118,10 @@ export const createProduct = () => async (dispatch, getState) => {
             type: PRODUCT_CREATE_REQUEST,
         });
 
-        console.log(456);
-        console.log(getState());
-
         const {
             userLogin: { userInfo },
         } = getState();
 
-        console.log(userInfo);
 
         const config = {
             headers: {
@@ -133,21 +129,15 @@ export const createProduct = () => async (dispatch, getState) => {
             },
         };
 
-        console.log(config);
-
         const { data } = await axios
             .post(`/api/products`,
                 {},
                 config);
 
-        console.log(data);
-
         dispatch({
             type: PRODUCT_CREATE_SUCCESS,
             payload: data,
         });
-
-        console.log("end");
 
     } catch (error) {
         dispatch({
@@ -188,6 +178,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
             type: PRODUCT_UPDATE_SUCCESS,
             payload: data,
         });
+
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
             payload: data

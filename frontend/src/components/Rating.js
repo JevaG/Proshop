@@ -71,7 +71,7 @@ const Rating = ({ value, text, color }) => {
                     >
                     </i>
                 </span>
-                {/*{text && text} if text exists then show it*/}
+                {/*{text && text} If you just want an inline IF (without the ELSE), you can use the logical AND operator:*/}
                 <span>{text && text}</span>
             </div>
         );
