@@ -1,7 +1,7 @@
 **ProShop**
 
 This is a mobile-friendly shopping cart application buiit with React, Redux, Express & MongoDB.
-
+Deployed to Heroku: [Proshop](https://proshop--app.herokuapp.com/)
 Which looks like this
 
 ![](frontend/public/images/ScreenShot.png)
@@ -13,7 +13,7 @@ The app provides users with the following functionality:
 - Admin user and product management
 - Checkout process 
 
-Deployed to Heroku: []()
+
 
 
 
