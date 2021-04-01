@@ -132,7 +132,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
         })
 
         const {
-            userLogin: { userInfo },
+            userLogin: { userInfo }
         } = getState();
 
         const config = {

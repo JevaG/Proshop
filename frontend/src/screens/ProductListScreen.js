@@ -64,7 +64,6 @@ export const ProductListScreen = ({ history, match }) => {
         }
     };
     const createProductHandler = () => {
-        console.log(123);
         dispatch(createProduct());
     }
 

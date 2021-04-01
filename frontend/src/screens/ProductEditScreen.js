@@ -56,6 +56,7 @@ const ProductEditScreen = ({ match, history }) => {
         }
     }, [dispatch, history, productId, product, successUpdate]);
 
+    // uploading image process
     const uploadFileHandler = async (e) => {
         const file = e.target.files[0];
         const formData = new FormData();
