@@ -89,7 +89,6 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
 
         const config = {
             headers: {
-
                 Authorization: `Bearer ${userInfo.token}`,
             },
         };
@@ -206,7 +205,7 @@ export const createProductReview = (productId, review) => async (dispatch, getSt
 
         const {
             userLogin: { userInfo },
-        } = getState()
+        } = getState();
 
         const config = {
             headers: {

@@ -23,6 +23,7 @@ const ProductScreen = ({ history, match }) => {
     // const { loading, error, product } = productDetails;
     let { loading } = productDetails;
     const { error, product } = productDetails;
+
     if (loading === undefined) {
         loading = true;
     }

@@ -9,7 +9,6 @@ const getProducts = asyncHandler(async (req, res) => {
     const pageSize = 4;
     const page = Number(req.query.pageNumber) || 1;
 
-
     const keyword = req.query.keyword ? {
         name: {
             $regex: req.query.keyword,
@@ -123,11 +122,11 @@ const createProductReview = asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id);
 
     if (product) {
-        const alreadyReviewed = product.reviews.find(
-            r => r.user.toString() === req.user._id.toString()
+        const userHasReview = product.reviews.find(
+            rev => rev.user.toString() === req.user._id.toString()
         )
 
-        if (alreadyReviewed) {
+        if (userHasReview) {
             res.status(404);
             throw new Error('Product already reviewed');
         }

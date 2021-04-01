@@ -110,6 +110,7 @@ export const orderDeliverReducer = (state = { }, action ) => {
                 loading: false,
                 error: action.payload
             }
+        //    to show an empty input
         case ORDER_DELIVER_RESET:
             return {}
         default:

@@ -31,10 +31,10 @@ const userSchema = mongoose.Schema (
 });
 
 
-userSchema.methods.matchPassword = async  function (enteredPassword) {
+userSchema.methods.matchPassword = async function (enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
 }
-
+// the password hashing
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password')) {
         next();

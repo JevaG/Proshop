@@ -16,6 +16,7 @@ export const UserListScreen = ({ history }) => {
     const { userInfo } = userLogin;
 
     const userDelete = useSelector((state) => state.userDelete);
+    // renaming to successDelete
     const { success: successDelete } = userDelete;
 
     useEffect(() => {
