@@ -8,7 +8,6 @@ Which looks like this
 
 ![](frontend/public/images/ScreenShot.png)
 
-Based on this tutorial: [Udemy course](https://www.udemy.com/course/mern-ecommerce/)
 
 The app provides users with the following functionality:
 - Full featured shopping cart
